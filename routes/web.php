@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+$vue = function () {
+    return view('vue');
+};
+
+Route::get('/', $vue);
+Route::get('/foo', $vue);
+Route::get('/foo/bar', $vue);

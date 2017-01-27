@@ -2,13 +2,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Example Component</div>
-
-                    <div class="panel-body">
-                        I'm an example component!
-                    </div>
-                </div>
+                <ul>
+                    <li><router-link to="/">home</router-link></li>
+                    <li><router-link to="/foo">foo</router-link></li>
+                    <li><router-link to="/foo/bar">foobar</router-link></li>
+                </ul>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <router-view></router-view>
             </div>
         </div>
     </div>
